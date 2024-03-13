@@ -81,7 +81,6 @@ void AsioStream<ReadStream>::wait(Timer& timer, const std::chrono::duration<Rep,
         {
         if (ec)
         {
-            LOG(ERROR, "AsioStream") << "Error during async wait: " << ec.message() << "\n";
         }
         else
         {
